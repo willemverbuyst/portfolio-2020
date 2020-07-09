@@ -74,3 +74,14 @@ body {
 .wrapper {
   width: 100%;
   background-color: #eee; }
+
+.links {
+  display: flex;
+  justify-content: flex-end; }
+  .links__icon {
+    background-image: linear-gradient(to left top, #bf214b, #f26d85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    padding: 1rem; }

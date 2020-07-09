@@ -2,3 +2,21 @@
   width: 100%;
   background-color: #eee;
 }
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+
+  &__icon {
+    background-image: linear-gradient(
+      to left top,
+      rgb(191, 33, 75),
+      rgb(242, 109, 133)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    padding: 1rem;
+  }
+}
