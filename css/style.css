@@ -53,6 +53,24 @@ body {
     color: transparent;
     animation: moveInLeft 2s ease-out; }
 
+.introduction {
+  max-width: 600px;
+  width: 55vw;
+  padding: 2rem 0 15rem 0;
+  margin: 0 auto; }
+  .introduction__title {
+    padding: 5rem 0 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+    color: #0e6973;
+    text-transform: uppercase; }
+  .introduction__text {
+    font-size: 2rem;
+    color: #0e6973;
+    text-align: justify; }
+    .introduction__text p {
+      padding: 1rem; }
+
 .wrapper {
   width: 100%;
   background-color: #eee; }
