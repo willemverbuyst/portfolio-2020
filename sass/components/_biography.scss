@@ -1,0 +1,24 @@
+.introduction {
+  max-width: 600px;
+  width: 55vw;
+  padding: 2rem 0 15rem 0;
+  margin: 0 auto;
+
+  &__title {
+    padding: 5rem 0 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(14, 105, 115);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: rgb(14, 105, 115);
+    text-align: justify;
+
+    p {
+      padding: 1rem;
+    }
+  }
+}
