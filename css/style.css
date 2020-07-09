@@ -17,13 +17,31 @@ body {
 .header {
   font-size: 3rem;
   position: relative; }
+  .header__image {
+    height: 95vh;
+    background-image: url("../img/viewFromPicoAustria.jpeg");
+    -webkit-clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
+    clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
+    background-size: cover;
+    background-position: center; }
   .header__name {
+    position: absolute;
+    left: -6.5rem;
+    bottom: 9rem;
     background-image: linear-gradient(to right, #bf214b, #f26d85);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; }
+    color: transparent;
+    transform: rotate(-90deg); }
   .header__credo {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
     background-image: linear-gradient(to right, #f26d85, #bf214b);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
+
+.wrapper {
+  width: 100%;
+  background-color: #eee; }
