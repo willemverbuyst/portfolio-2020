@@ -1,3 +1,13 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -40,7 +50,8 @@ body {
     background-image: linear-gradient(to right, #f26d85, #bf214b);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; }
+    color: transparent;
+    animation: moveInLeft 2s ease-out; }
 
 .wrapper {
   width: 100%;
