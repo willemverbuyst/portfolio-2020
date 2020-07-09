@@ -11,4 +11,19 @@ html {
 body {
   box-sizing: border-box;
   padding: 2rem;
+  font-family: 'Titillium Web', sans-serif;
   color: black; }
+
+.header {
+  font-size: 3rem;
+  position: relative; }
+  .header__name {
+    background-image: linear-gradient(to right, #bf214b, #f26d85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .header__credo {
+    background-image: linear-gradient(to right, #f26d85, #bf214b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }

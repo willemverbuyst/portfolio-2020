@@ -1,0 +1,26 @@
+.header {
+  font-size: 3rem;
+  position: relative;
+
+  &__name {
+    background-image: linear-gradient(
+      to right,
+      rgb(191, 33, 75),
+      rgb(242, 109, 133)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__credo {
+    background-image: linear-gradient(
+      to right,
+      rgb(242, 109, 133),
+      rgb(191, 33, 75)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
