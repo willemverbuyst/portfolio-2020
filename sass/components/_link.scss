@@ -1,0 +1,17 @@
+.link-github,
+.link-github:link,
+.link-github:visited {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 3rem;
+  margin: 0.5rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.link-github:hover,
+.link-github:active {
+  transform: scale(0.95);
+}

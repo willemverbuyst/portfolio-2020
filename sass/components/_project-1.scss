@@ -30,6 +30,16 @@
     background-image: url('../img/dashboard-4.png');
     background-position: center;
   }
+  &__show--dashboard-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      to left top,
+      rgb(191, 33, 75),
+      rgb(242, 109, 133)
+    );
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -47,6 +57,12 @@
 
   &:hover .circle__show--dashboard-4 {
     transform: translate(24rem, 11rem) scale(0.6);
+    opacity: 1;
+  }
+
+  &:hover .circle__show--dashboard-link {
+    transform: translate(13rem, -20rem) scale(0.3);
+
     opacity: 1;
   }
 
