@@ -3,6 +3,13 @@
   background-color: #eee;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .links {
   display: flex;
   justify-content: flex-end;

@@ -22,7 +22,59 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   font-family: 'Titillium Web', sans-serif;
-  color: black; }
+  color: #fff; }
+
+ul {
+  list-style-type: none; }
+
+.circle {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease; }
+  .circle__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 20rem;
+    text-align: center; }
+    .circle__top--discription {
+      position: absolute;
+      top: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: #0e6973; }
+  .circle__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom-right-radius: 20rem;
+    border-bottom-left-radius: 20rem;
+    z-index: 1; }
+  .circle__show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: all 1s ease-in;
+    background-size: cover; }
+    .circle__show--text {
+      background-color: #0e6973; }
+
+.checkbox {
+  display: none; }
 
 .header {
   font-size: 3rem;
@@ -71,9 +123,69 @@ body {
     .introduction__text p {
       padding: 1rem; }
 
+.project-1 {
+  margin-bottom: 15rem; }
+
+.circle__top--discription--dashboard {
+  top: 8rem; }
+
+.circle__bottom--dashboard {
+  background-image: url("../img/dashboard-3.png");
+  background-size: cover;
+  background-position: left top; }
+
+.circle__show--dashboard-1 {
+  background-image: url("../img/dashboard-3.png");
+  background-position: bottom; }
+
+.circle__show--dashboard-2 {
+  background-image: url("../img/dashboard-5.png"); }
+
+.circle__show--dashboard-3 {
+  background-image: url("../img/dashboard-2.png");
+  background-position: center; }
+
+.circle__show--dashboard-4 {
+  background-image: url("../img/dashboard-4.png");
+  background-position: center; }
+
+.circle:hover {
+  transform: scale(1.05); }
+
+.circle:hover .circle__show--dashboard-1 {
+  transform: translate(-27rem, -10rem) scale(0.9);
+  opacity: 1; }
+
+.circle:hover .circle__show--dashboard-2 {
+  transform: translate(30rem, -12rem) scale(0.7);
+  opacity: 1; }
+
+.circle:hover .circle__show--dashboard-4 {
+  transform: translate(24rem, 11rem) scale(0.6);
+  opacity: 1; }
+
+.circle:hover .circle__show--dashboard-text {
+  transform: translate(-20rem, 13rem) scale(0.5);
+  opacity: 1; }
+
+.project-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #fff; }
+
 .wrapper {
   width: 100%;
   background-color: #eee; }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .links {
   display: flex;
