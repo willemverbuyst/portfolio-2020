@@ -75,10 +75,10 @@ body {
   width: 100%;
   background-color: #eee; }
 
-.linked-in {
+.links {
   display: flex;
   justify-content: flex-end; }
-  .linked-in__icon {
+  .links__icon {
     background-image: linear-gradient(to left top, #bf214b, #f26d85);
     -webkit-background-clip: text;
     background-clip: text;
