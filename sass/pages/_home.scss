@@ -27,3 +27,16 @@
     padding: 1rem;
   }
 }
+
+.links__project {
+  background-image: linear-gradient(
+    to left top,
+    rgb(14, 105, 115),
+    rgb(71, 180, 192)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  padding: 1rem;
+}

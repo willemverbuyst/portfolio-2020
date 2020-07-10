@@ -127,6 +127,7 @@ body {
   align-items: center; }
   .project-1__description {
     width: 25rem;
+    padding-left: 2rem;
     opacity: 0;
     transition: opacity 1s linear; }
     .project-1__description p {
@@ -169,23 +170,22 @@ body {
 
 .project-2 {
   margin-bottom: 15rem;
-  width: 100vw;
+  width: 80vw;
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
   color: #0e6973;
-  text-align: left;
   align-items: center; }
   .project-2__description {
-    width: 25rem;
-    opacity: 0;
-    transition: opacity 1s linear; }
+    width: 25vw;
+    padding-left: 2rem;
+    text-align: left; }
     .project-2__description p {
       padding: 1rem; }
-  .project-2__link {
-    width: 25rem; }
-  .project-2:hover .project-2__description {
-    opacity: 1; }
+    .project-2__description a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #0e6973; }
 
 .project-3 {
   margin-bottom: 15rem;
@@ -200,7 +200,8 @@ body {
   .project-3__description {
     width: 25rem;
     opacity: 0;
-    transition: opacity 1s linear; }
+    transition: opacity 1s linear;
+    padding-left: 2rem; }
     .project-3__description p {
       padding: 1rem; }
   .project-3__link {
@@ -253,3 +254,11 @@ body {
     color: transparent;
     font-size: 5rem;
     padding: 1rem; }
+
+.links__project {
+  background-image: linear-gradient(to left top, #0e6973, #47b4c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  padding: 1rem; }
