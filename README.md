@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-[Visit webesite](https://willemverbuyst.github.io/portfolio/)
+[Visit website](https://willemverbuyst.github.io/portfolio/)
 
 ## What is this?
 
@@ -10,7 +10,7 @@ On this website you will find a short 'about me' and snippets of three projects 
 
 ## Goal
 
-The goal was not to use JavaScript but to use Sass to make the css come alive.
+The goal was not to use JavaScript but Sass to make the css come alive.
 
 ## Todo
 
