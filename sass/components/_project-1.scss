@@ -1,5 +1,29 @@
 .project-1 {
   margin-bottom: 15rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: rgb(14, 105, 115);
+  text-align: left;
+  align-items: center;
+
+  &__description {
+    width: 25rem;
+    opacity: 0;
+    transition: opacity 1s linear;
+
+    p {
+      padding: 1rem;
+    }
+  }
+  &__link {
+    width: 25rem;
+  }
+
+  &:hover .project-1__description {
+    opacity: 1;
+  }
 }
 
 .circle {

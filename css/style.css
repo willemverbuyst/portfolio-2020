@@ -117,7 +117,24 @@ body {
   transform: scale(0.95); }
 
 .project-1 {
-  margin-bottom: 15rem; }
+  margin-bottom: 15rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  text-align: left;
+  align-items: center; }
+  .project-1__description {
+    width: 25rem;
+    opacity: 0;
+    transition: opacity 1s linear; }
+    .project-1__description p {
+      padding: 1rem; }
+  .project-1__link {
+    width: 25rem; }
+  .project-1:hover .project-1__description {
+    opacity: 1; }
 
 .circle__cover--dashboard {
   background-image: url("../img/dashboard-4.png");
@@ -157,7 +174,7 @@ body {
   justify-content: space-around;
   font-size: 2rem;
   color: #0e6973;
-  text-align: justify;
+  text-align: left;
   align-items: center; }
   .project-2__description {
     width: 25rem;
