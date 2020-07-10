@@ -188,7 +188,25 @@ body {
     opacity: 1; }
 
 .project-3 {
-  margin-bottom: 15rem; }
+  margin-bottom: 15rem;
+  margin-bottom: 15rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  text-align: left;
+  align-items: center; }
+  .project-3__description {
+    width: 25rem;
+    opacity: 0;
+    transition: opacity 1s linear; }
+    .project-3__description p {
+      padding: 1rem; }
+  .project-3__link {
+    width: 25rem; }
+  .project-3:hover .project-3__description {
+    opacity: 1; }
 
 .circle-o {
   width: 40rem;
