@@ -1,3 +1,13 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -11,4 +21,202 @@ html {
 body {
   box-sizing: border-box;
   padding: 2rem;
-  color: black; }
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff; }
+
+.header {
+  font-size: 3rem;
+  position: relative; }
+  .header__image {
+    height: 95vh;
+    background-image: url("../img/viewFromPicoAustria.jpeg");
+    -webkit-clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
+    clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
+    background-size: cover;
+    background-position: center; }
+  .header__name {
+    position: absolute;
+    left: -6.5rem;
+    bottom: 9rem;
+    background-image: linear-gradient(to right, #bf214b, #f26d85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: rotate(-90deg); }
+  .header__credo {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    background-image: linear-gradient(to right, #f26d85, #bf214b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveInLeft 2s ease-out; }
+
+.introduction {
+  max-width: 600px;
+  width: 55vw;
+  padding: 2rem 0 15rem 0;
+  margin: 0 auto;
+  color: #0e6973; }
+  .introduction__title {
+    padding: 5rem 0 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .introduction__text {
+    font-size: 2rem;
+    text-align: justify; }
+    .introduction__text p {
+      padding: 1rem; }
+
+.project-threejs {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  align-items: center; }
+  .project-threejs__description {
+    width: 20vw;
+    text-align: left; }
+    .project-threejs__description p {
+      padding: 1rem; }
+    .project-threejs__description a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #0e6973; }
+
+.project-dashboard {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  align-items: center; }
+  .project-dashboard__description {
+    width: 20vw;
+    text-align: right; }
+    .project-dashboard__description p {
+      padding: 1rem; }
+
+.circle {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 1s ease-in-out; }
+  .circle__cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1; }
+    .circle__cover--dashboard {
+      background-image: url("../img/dashboard-4.png");
+      background-size: cover;
+      background-position: center; }
+  .circle__show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: all 1s ease-in;
+    background-size: cover; }
+    .circle__show--dashboard-1 {
+      background-image: url("../img/dashboard-3.png");
+      background-position: bottom; }
+    .circle__show--dashboard-2 {
+      background-image: url("../img/dashboard-7.png"); }
+    .circle__show--dashboard-3 {
+      background-image: url("../img/dashboard-5.png");
+      background-position: center; }
+  .circle:hover {
+    transform: scale(1.05);
+    margin-top: 13rem;
+    margin-bottom: 5rem; }
+  .circle:hover .circle__show--dashboard-1 {
+    transform: translate(-16rem, -25rem) scale(0.9);
+    opacity: 1; }
+  .circle:hover .circle__show--dashboard-2 {
+    transform: translate(15rem, -23rem) scale(0.7);
+    opacity: 1; }
+  .circle:hover .circle__show--dashboard-3 {
+    transform: translate(20rem, 18rem) scale(0.6);
+    opacity: 1; }
+
+.project-hexagon-generator {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  text-align: left;
+  align-items: center; }
+  .project-hexagon-generator__description {
+    width: 20vw; }
+    .project-hexagon-generator__description p {
+      padding: 1rem; }
+
+.circle__hexagon-generator {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 2s ease;
+  background: url("../img/hexagon-generator-1.png");
+  background-size: cover;
+  background-position: 20% 50%; }
+  .circle__hexagon-generator:hover {
+    width: 80rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: url("../img/hexagon-generator-2.png");
+    background-size: cover;
+    background-position: center; }
+  .circle__hexagon-generator:active {
+    width: 80rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: url("../img/hexagon-generator-3.png");
+    background-size: cover;
+    background-position: center; }
+
+.wrapper {
+  width: 100%;
+  background-color: #eee; }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.links {
+  display: flex;
+  justify-content: flex-end; }
+  .links__icon {
+    background-image: linear-gradient(to left top, #bf214b, #f26d85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    padding: 1rem; }
+
+.link__project {
+  background-image: linear-gradient(to left top, #0e6973, #47b4c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  padding: 1rem; }

@@ -1,0 +1,48 @@
+.project-hexagon-generator {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: rgb(14, 105, 115);
+  text-align: left;
+  align-items: center;
+
+  &__description {
+    width: 20vw;
+
+    p {
+      padding: 1rem;
+    }
+  }
+}
+
+.circle__hexagon-generator {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 2s ease;
+  background: url('../img/hexagon-generator-1.png');
+  background-size: cover;
+  background-position: 20% 50%;
+
+  &:hover {
+    width: 80rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: url('../img/hexagon-generator-2.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:active {
+    width: 80rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: url('../img/hexagon-generator-3.png');
+    background-size: cover;
+    background-position: center;
+  }
+}

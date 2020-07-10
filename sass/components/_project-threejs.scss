@@ -1,0 +1,23 @@
+.project-threejs {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: rgb(14, 105, 115);
+  align-items: center;
+
+  &__description {
+    width: 20vw;
+    text-align: left;
+    p {
+      padding: 1rem;
+    }
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: rgb(14, 105, 115);
+    }
+  }
+}

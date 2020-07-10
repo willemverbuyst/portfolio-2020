@@ -1,1 +1,10 @@
+@import './base/animations';
 @import './base/base';
+
+@import './components/header';
+@import './components/biography';
+@import './components/project-threejs';
+@import './components/project-dashboard';
+@import './components/project-hexagon-generator';
+
+@import './pages/home';
