@@ -120,9 +120,9 @@ body {
   margin-bottom: 15rem; }
 
 .circle__cover--dashboard {
-  background-image: url("../img/dashboard-5.png");
+  background-image: url("../img/dashboard-4.png");
   background-size: cover;
-  background-position: right; }
+  background-position: center; }
 
 .circle__show--dashboard-1 {
   background-image: url("../img/dashboard-3.png");
@@ -131,8 +131,8 @@ body {
 .circle__show--dashboard-2 {
   background-image: url("../img/dashboard-7.png"); }
 
-.circle__show--dashboard-4 {
-  background-image: url("../img/dashboard-4.png");
+.circle__show--dashboard-3 {
+  background-image: url("../img/dashboard-5.png");
   background-position: center; }
 
 .circle:hover {
@@ -146,7 +146,7 @@ body {
   transform: translate(30rem, -12rem) scale(0.7);
   opacity: 1; }
 
-.circle:hover .circle__show--dashboard-4 {
+.circle:hover .circle__show--dashboard-3 {
   transform: translate(24rem, 11rem) scale(0.6);
   opacity: 1; }
 

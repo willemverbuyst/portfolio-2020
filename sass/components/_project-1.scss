@@ -4,9 +4,9 @@
 
 .circle {
   &__cover--dashboard {
-    background-image: url('../img/dashboard-5.png');
+    background-image: url('../img/dashboard-4.png');
     background-size: cover;
-    background-position: right;
+    background-position: center;
   }
 
   &__show--dashboard-1 {
@@ -18,8 +18,8 @@
     background-image: url('../img/dashboard-7.png');
   }
 
-  &__show--dashboard-4 {
-    background-image: url('../img/dashboard-4.png');
+  &__show--dashboard-3 {
+    background-image: url('../img/dashboard-5.png');
     background-position: center;
   }
 
@@ -37,7 +37,7 @@
     opacity: 1;
   }
 
-  &:hover .circle__show--dashboard-4 {
+  &:hover .circle__show--dashboard-3 {
     transform: translate(24rem, 11rem) scale(0.6);
     opacity: 1;
   }
