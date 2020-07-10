@@ -24,35 +24,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
   color: #fff; }
 
-.circle {
-  width: 40rem;
-  height: 40rem;
-  border-radius: 50%;
-  position: relative;
-  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease; }
-  .circle__cover {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: 1; }
-  .circle__show {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    opacity: 0.1;
-    transition: all 1s ease-in;
-    background-size: cover; }
-
-.checkbox {
-  display: none; }
-
 .header {
   font-size: 3rem;
   position: relative; }
@@ -86,37 +57,20 @@ body {
   max-width: 600px;
   width: 55vw;
   padding: 2rem 0 15rem 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #0e6973; }
   .introduction__title {
     padding: 5rem 0 2rem 0;
     font-size: 4rem;
     text-align: center;
-    color: #0e6973;
     text-transform: uppercase; }
   .introduction__text {
     font-size: 2rem;
-    color: #0e6973;
     text-align: justify; }
     .introduction__text p {
       padding: 1rem; }
 
-.link-github,
-.link-github:link,
-.link-github:visited {
-  text-decoration: none;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  font-size: 5rem;
-  margin: 0.5rem;
-  padding: 0.2rem 0.6rem; }
-
-.link-github:hover,
-.link-github:active {
-  transform: scale(0.95); }
-
-.project-1 {
+.project-threejs {
   margin-bottom: 15rem;
   width: 80vw;
   display: flex;
@@ -124,26 +78,67 @@ body {
   font-size: 2rem;
   color: #0e6973;
   align-items: center; }
-  .project-1__description {
+  .project-threejs__description {
+    width: 20vw;
+    text-align: left; }
+    .project-threejs__description p {
+      padding: 1rem; }
+    .project-threejs__description a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #0e6973; }
+
+.project-dashboard {
+  margin-bottom: 15rem;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #0e6973;
+  align-items: center; }
+  .project-dashboard__description {
     width: 20vw;
     text-align: right; }
-    .project-1__description p {
+    .project-dashboard__description p {
       padding: 1rem; }
 
 .circle {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
   transition: all 1s ease-in-out; }
-  .circle__cover--dashboard {
-    background-image: url("../img/dashboard-4.png");
-    background-size: cover;
-    background-position: center; }
-  .circle__show--dashboard-1 {
-    background-image: url("../img/dashboard-3.png");
-    background-position: bottom; }
-  .circle__show--dashboard-2 {
-    background-image: url("../img/dashboard-7.png"); }
-  .circle__show--dashboard-3 {
-    background-image: url("../img/dashboard-5.png");
-    background-position: center; }
+  .circle__cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1; }
+    .circle__cover--dashboard {
+      background-image: url("../img/dashboard-4.png");
+      background-size: cover;
+      background-position: center; }
+  .circle__show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: all 1s ease-in;
+    background-size: cover; }
+    .circle__show--dashboard-1 {
+      background-image: url("../img/dashboard-3.png");
+      background-position: bottom; }
+    .circle__show--dashboard-2 {
+      background-image: url("../img/dashboard-7.png"); }
+    .circle__show--dashboard-3 {
+      background-image: url("../img/dashboard-5.png");
+      background-position: center; }
   .circle:hover {
     transform: scale(1.05);
     margin-top: 13rem;
@@ -158,25 +153,7 @@ body {
     transform: translate(20rem, 18rem) scale(0.6);
     opacity: 1; }
 
-.project-2 {
-  margin-bottom: 15rem;
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  color: #0e6973;
-  align-items: center; }
-  .project-2__description {
-    width: 20vw;
-    text-align: left; }
-    .project-2__description p {
-      padding: 1rem; }
-    .project-2__description a {
-      padding: 1rem;
-      text-decoration: none;
-      color: #0e6973; }
-
-.project-3 {
+.project-hexagon-generator {
   margin-bottom: 15rem;
   width: 80vw;
   display: flex;
@@ -185,12 +162,12 @@ body {
   color: #0e6973;
   text-align: left;
   align-items: center; }
-  .project-3__description {
+  .project-hexagon-generator__description {
     width: 20vw; }
-    .project-3__description p {
+    .project-hexagon-generator__description p {
       padding: 1rem; }
 
-.circle-o {
+.circle__hexagon-generator {
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
@@ -200,14 +177,14 @@ body {
   background: url("../img/hexagon-generator-1.png");
   background-size: cover;
   background-position: 20% 50%; }
-  .circle-o:hover {
+  .circle__hexagon-generator:hover {
     width: 80rem;
     height: 50rem;
     border-radius: 50%;
     background: url("../img/hexagon-generator-2.png");
     background-size: cover;
     background-position: center; }
-  .circle-o:active {
+  .circle__hexagon-generator:active {
     width: 80rem;
     height: 50rem;
     border-radius: 50%;
@@ -236,7 +213,7 @@ body {
     font-size: 5rem;
     padding: 1rem; }
 
-.links__project {
+.link__project {
   background-image: linear-gradient(to left top, #0e6973, #47b4c0);
   -webkit-background-clip: text;
   background-clip: text;
