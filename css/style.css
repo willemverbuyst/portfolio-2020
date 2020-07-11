@@ -166,11 +166,22 @@ body {
   font-size: 2rem;
   color: #0e6973;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project-dashboard {
+      flex-direction: column;
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project-dashboard {
+      margin-bottom: 5rem; } }
   .project-dashboard__description {
     width: 20vw;
     text-align: right; }
     .project-dashboard__description p {
       padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project-dashboard__description {
+        width: 60vw;
+        text-align: center; } }
 
 .circle {
   width: 40rem;
@@ -213,6 +224,10 @@ body {
     transform: scale(1.05);
     margin-top: 13rem;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .circle:hover {
+        margin-top: 23rem;
+        margin-bottom: 15rem; } }
   .circle:hover .circle__show--dashboard-1 {
     transform: translate(-16rem, -25rem) scale(0.9);
     opacity: 1; }

@@ -7,12 +7,25 @@
   color: rgb(14, 105, 115);
   align-items: center;
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-small) {
+    margin-bottom: 5rem;
+  }
+
   &__description {
     width: 20vw;
     text-align: right;
 
     p {
       padding: 1rem;
+    }
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 60vw;
+      text-align: center;
     }
   }
 }
@@ -71,6 +84,11 @@
     transform: scale(1.05);
     margin-top: 13rem;
     margin-bottom: 5rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      margin-top: 23rem;
+      margin-bottom: 15rem;
+    }
   }
 
   &:hover .circle__show--dashboard-1 {
