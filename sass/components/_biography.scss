@@ -5,11 +5,33 @@
   margin: 0 auto;
   color: rgb(14, 105, 115);
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    width: 75vw;
+  }
+
+  @media only screen and (max-width: $breakpoint-small) {
+    width: 85vw;
+    padding-bottom: 8rem;
+  }
+
   &__title {
     padding: 5rem 0 2rem 0;
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $breakpoint-largest) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      font-size: 2.7rem;
+      padding-top: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      padding-top: 2.2rem;
+    }
   }
 
   &__text {
@@ -18,6 +40,10 @@
 
     p {
       padding: 1rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      font-size: 1.8rem;
     }
   }
 }

@@ -62,16 +62,36 @@ body {
   padding: 2rem 0 15rem 0;
   margin: 0 auto;
   color: #0e6973; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      width: 75vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .introduction {
+      width: 85vw;
+      padding-bottom: 8rem; } }
   .introduction__title {
     padding: 5rem 0 2rem 0;
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase; }
+    @media only screen and (max-width: 68.75em) {
+      .introduction__title {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__title {
+        font-size: 2.7rem;
+        padding-top: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__title {
+        padding-top: 2.2rem; } }
   .introduction__text {
     font-size: 2rem;
     text-align: justify; }
     .introduction__text p {
       padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__text {
+        font-size: 1.8rem; } }
 
 .project-threejs {
   margin-bottom: 15rem;
