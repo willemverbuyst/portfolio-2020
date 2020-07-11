@@ -16,6 +16,10 @@
     clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
     background-size: cover;
     background-position: center;
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      clip-path: polygon(0 0, 15% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 15%);
+    }
   }
 
   &__name {
@@ -31,6 +35,12 @@
     background-clip: text;
     color: transparent;
     transform: rotate(-90deg);
+
+    @media only screen and (max-width: $breakpoint-small) {
+      left: -5rem;
+      bottom: 6rem;
+      font-size: 2.2rem;
+    }
   }
 
   &__credo {
@@ -46,5 +56,21 @@
     background-clip: text;
     color: transparent;
     animation: moveInLeft 2s ease-out;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      text-align: right;
+      width: 28rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      font-size: 2.2rem;
+      width: 18rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      top: 2rem;
+      width: 18rem;
+      font-size: 1.6rem;
+    }
   }
 }
