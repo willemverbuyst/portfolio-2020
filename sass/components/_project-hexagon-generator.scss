@@ -8,11 +8,24 @@
   text-align: left;
   align-items: center;
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-small) {
+    margin-bottom: 5rem;
+  }
+
   &__description {
     width: 20vw;
 
     p {
       padding: 1rem;
+    }
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 60vw;
+      text-align: center;
     }
   }
 }
@@ -27,6 +40,7 @@
   background: url('../img/hexagon-generator-1.png');
   background-size: cover;
   background-position: 20% 50%;
+  overflow: hidden;
 
   &:hover {
     width: 80rem;
@@ -35,6 +49,21 @@
     background: url('../img/hexagon-generator-2.png');
     background-size: cover;
     background-position: center;
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      width: 95vw;
+      height: 95vw;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 75rem;
+      height: 45rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      width: 95vw;
+      height: 95vw;
+    }
   }
 
   &:active {
@@ -44,5 +73,15 @@
     background: url('../img/hexagon-generator-3.png');
     background-size: cover;
     background-position: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 75rem;
+      height: 45rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      width: 95vw;
+      height: 95vw;
+    }
   }
 }
