@@ -124,7 +124,11 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .project-threejs {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .project-threejs {
+      margin-bottom: 5rem; } }
   .project-threejs__description {
     width: 20vw;
     text-align: left; }
@@ -149,6 +153,10 @@ body {
     border: none;
     width: 40rem;
     height: 40rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project-threejs__iframe--element {
+        width: 95vw;
+        height: 95vw; } }
 
 .project-dashboard {
   margin-bottom: 15rem;
