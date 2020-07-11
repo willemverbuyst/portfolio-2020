@@ -37,6 +37,9 @@ body {
     clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 31.25em) {
+      .header__image {
+        clip-path: polygon(0 0, 15% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 15%); } }
   .header__name {
     position: absolute;
     left: -6.5rem;
@@ -46,6 +49,11 @@ body {
     background-clip: text;
     color: transparent;
     transform: rotate(-90deg); }
+    @media only screen and (max-width: 37.5em) {
+      .header__name {
+        left: -5rem;
+        bottom: 6rem;
+        font-size: 2.2rem; } }
   .header__credo {
     position: absolute;
     right: 2rem;
@@ -55,6 +63,19 @@ body {
     background-clip: text;
     color: transparent;
     animation: moveInLeft 2s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .header__credo {
+        text-align: right;
+        width: 28rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__credo {
+        font-size: 2.2rem;
+        width: 18rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .header__credo {
+        top: 2rem;
+        width: 18rem;
+        font-size: 1.6rem; } }
 
 .introduction {
   max-width: 600px;
