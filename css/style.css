@@ -122,6 +122,9 @@ body {
   font-size: 2rem;
   color: #0e6973;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project-threejs {
+      flex-direction: column; } }
   .project-threejs__description {
     width: 20vw;
     text-align: left; }
@@ -131,6 +134,10 @@ body {
       padding: 1rem;
       text-decoration: none;
       color: #0e6973; }
+    @media only screen and (max-width: 56.25em) {
+      .project-threejs__description {
+        width: 60vw;
+        text-align: center; } }
   .project-threejs__iframe--element {
     padding: 10px;
     background: #000;
@@ -139,7 +146,9 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     overflow: hidden;
-    border: none; }
+    border: none;
+    width: 40rem;
+    height: 40rem; }
 
 .project-dashboard {
   margin-bottom: 15rem;
@@ -281,7 +290,8 @@ body {
   padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     .link__project {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      transform: translateX(-25vw); } }
   @media only screen and (max-width: 37.5em) {
     .link__project {
       font-size: 3rem; } }

@@ -7,6 +7,10 @@
   color: rgb(14, 105, 115);
   align-items: center;
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    flex-direction: column;
+  }
+
   &__description {
     width: 20vw;
     text-align: left;
@@ -19,6 +23,11 @@
       text-decoration: none;
       color: rgb(14, 105, 115);
     }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 60vw;
+      text-align: center;
+    }
   }
 
   &__iframe--element {
@@ -30,5 +39,7 @@
     margin: 0 auto;
     overflow: hidden;
     border: none;
+    width: 40rem;
+    height: 40rem;
   }
 }
