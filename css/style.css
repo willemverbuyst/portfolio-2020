@@ -124,8 +124,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .project-threejs {
-      flex-direction: column;
-      margin-bottom: 10rem; } }
+      flex-direction: column; } }
   @media only screen and (max-width: 37.5em) {
     .project-threejs {
       margin-bottom: 5rem; } }
@@ -141,7 +140,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .project-threejs__description {
         width: 60vw;
-        text-align: center; } }
+        text-align: center;
+        order: 1;
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
   .project-threejs__iframe--element {
     padding: 10px;
     background: #000;
@@ -155,8 +157,8 @@ body {
     height: 40rem; }
     @media only screen and (max-width: 37.5em) {
       .project-threejs__iframe--element {
-        width: 95vw;
-        height: 95vw; } }
+        width: 90vw;
+        height: 90vw; } }
 
 .project-dashboard {
   margin-bottom: 15rem;
@@ -168,8 +170,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .project-dashboard {
-      flex-direction: column;
-      margin-bottom: 10rem; } }
+      flex-direction: column; } }
   @media only screen and (max-width: 37.5em) {
     .project-dashboard {
       margin-bottom: 5rem; } }
@@ -181,7 +182,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .project-dashboard__description {
         width: 60vw;
-        text-align: center; } }
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
 
 .circle {
   width: 40rem;
@@ -249,8 +252,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .project-hexagon-generator {
-      flex-direction: column;
-      margin-bottom: 10rem; } }
+      flex-direction: column; } }
   @media only screen and (max-width: 37.5em) {
     .project-hexagon-generator {
       margin-bottom: 5rem; } }
@@ -261,7 +263,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .project-hexagon-generator__description {
         width: 60vw;
-        text-align: center; } }
+        text-align: center;
+        order: 1;
+        margin-top: 5rem; } }
 
 .circle__hexagon-generator {
   width: 40rem;
@@ -274,6 +278,10 @@ body {
   background-size: cover;
   background-position: 20% 50%;
   overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .circle__hexagon-generator {
+      width: 90vw;
+      height: 90vw; } }
   .circle__hexagon-generator:hover {
     width: 80rem;
     height: 50rem;
@@ -281,18 +289,14 @@ body {
     background: url("../img/hexagon-generator-2.png");
     background-size: cover;
     background-position: center; }
-    @media only screen and (max-width: 31.25em) {
-      .circle__hexagon-generator:hover {
-        width: 95vw;
-        height: 95vw; } }
     @media only screen and (max-width: 56.25em) {
       .circle__hexagon-generator:hover {
         width: 75rem;
         height: 45rem; } }
     @media only screen and (max-width: 37.5em) {
       .circle__hexagon-generator:hover {
-        width: 95vw;
-        height: 95vw; } }
+        width: 90vw;
+        height: 90vw; } }
   .circle__hexagon-generator:active {
     width: 80rem;
     height: 50rem;
@@ -306,8 +310,8 @@ body {
         height: 45rem; } }
     @media only screen and (max-width: 37.5em) {
       .circle__hexagon-generator:active {
-        width: 95vw;
-        height: 95vw; } }
+        width: 90vw;
+        height: 90vw; } }
 
 .wrapper {
   width: 100%;
@@ -345,8 +349,7 @@ body {
   padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     .link__project {
-      font-size: 4rem;
-      transform: translateX(-25vw); } }
+      font-size: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .link__project {
       font-size: 3rem; } }

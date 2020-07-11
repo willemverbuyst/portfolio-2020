@@ -10,7 +10,6 @@
 
   @media only screen and (max-width: $breakpoint-medium) {
     flex-direction: column;
-    margin-bottom: 10rem;
   }
 
   @media only screen and (max-width: $breakpoint-small) {
@@ -26,6 +25,8 @@
     @media only screen and (max-width: $breakpoint-medium) {
       width: 60vw;
       text-align: center;
+      order: 1;
+      margin-top: 5rem;
     }
   }
 }
@@ -42,6 +43,11 @@
   background-position: 20% 50%;
   overflow: hidden;
 
+  @media only screen and (max-width: $breakpoint-small) {
+    width: 90vw;
+    height: 90vw;
+  }
+
   &:hover {
     width: 80rem;
     height: 50rem;
@@ -50,19 +56,14 @@
     background-size: cover;
     background-position: center;
 
-    @media only screen and (max-width: $breakpoint-smallest) {
-      width: 95vw;
-      height: 95vw;
-    }
-
     @media only screen and (max-width: $breakpoint-medium) {
       width: 75rem;
       height: 45rem;
     }
 
     @media only screen and (max-width: $breakpoint-small) {
-      width: 95vw;
-      height: 95vw;
+      width: 90vw;
+      height: 90vw;
     }
   }
 
@@ -80,8 +81,8 @@
     }
 
     @media only screen and (max-width: $breakpoint-small) {
-      width: 95vw;
-      height: 95vw;
+      width: 90vw;
+      height: 90vw;
     }
   }
 }
