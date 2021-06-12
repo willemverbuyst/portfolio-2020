@@ -23,6 +23,9 @@ body {
   padding: 2rem;
   font-family: 'Titillium Web', sans-serif;
   color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .header {
   font-size: 3rem;
@@ -34,6 +37,9 @@ body {
     clip-path: polygon(0 0, 30% 0%, 100% 20%, 100% 100%, 15% 100%, 0% 30%);
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 31.25em) {
+      .header__image {
+        clip-path: polygon(0 0, 15% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 15%); } }
   .header__name {
     position: absolute;
     left: -6.5rem;
@@ -43,6 +49,11 @@ body {
     background-clip: text;
     color: transparent;
     transform: rotate(-90deg); }
+    @media only screen and (max-width: 37.5em) {
+      .header__name {
+        left: -5rem;
+        bottom: 6rem;
+        font-size: 2.2rem; } }
   .header__credo {
     position: absolute;
     right: 2rem;
@@ -52,6 +63,19 @@ body {
     background-clip: text;
     color: transparent;
     animation: moveInLeft 2s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .header__credo {
+        text-align: right;
+        width: 28rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__credo {
+        font-size: 2.2rem;
+        width: 18rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .header__credo {
+        top: 2rem;
+        width: 18rem;
+        font-size: 1.6rem; } }
 
 .introduction {
   max-width: 600px;
@@ -59,16 +83,37 @@ body {
   padding: 2rem 0 15rem 0;
   margin: 0 auto;
   color: #0e6973; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      width: 75vw;
+      padding-bottom: 11rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .introduction {
+      width: 85vw;
+      padding-bottom: 8rem; } }
   .introduction__title {
     padding: 5rem 0 2rem 0;
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase; }
+    @media only screen and (max-width: 68.75em) {
+      .introduction__title {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__title {
+        font-size: 2.7rem;
+        padding-top: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__title {
+        padding-top: 2.2rem; } }
   .introduction__text {
     font-size: 2rem;
     text-align: justify; }
     .introduction__text p {
       padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__text {
+        font-size: 1.8rem; } }
 
 .project-threejs {
   margin-bottom: 15rem;
@@ -78,6 +123,12 @@ body {
   font-size: 2rem;
   color: #0e6973;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project-threejs {
+      flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .project-threejs {
+      margin-bottom: 5rem; } }
   .project-threejs__description {
     width: 20vw;
     text-align: left; }
@@ -87,6 +138,28 @@ body {
       padding: 1rem;
       text-decoration: none;
       color: #0e6973; }
+    @media only screen and (max-width: 56.25em) {
+      .project-threejs__description {
+        width: 60vw;
+        text-align: center;
+        order: 1;
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
+  .project-threejs__iframe--element {
+    padding: 10px;
+    background: #000;
+    /* webkit-border-radius: 50%; */
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: none;
+    width: 40rem;
+    height: 40rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project-threejs__iframe--element {
+        width: 90vw;
+        height: 90vw; } }
 
 .project-dashboard {
   margin-bottom: 15rem;
@@ -96,11 +169,23 @@ body {
   font-size: 2rem;
   color: #0e6973;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project-dashboard {
+      flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .project-dashboard {
+      margin-bottom: 5rem; } }
   .project-dashboard__description {
     width: 20vw;
     text-align: right; }
     .project-dashboard__description p {
       padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project-dashboard__description {
+        width: 60vw;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
 
 .circle {
   width: 40rem;
@@ -109,6 +194,10 @@ body {
   position: relative;
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
   transition: all 1s ease-in-out; }
+  @media only screen and (max-width: 37.5em) {
+    .circle {
+      width: 90vw;
+      height: 90vw; } }
   .circle__cover {
     position: absolute;
     bottom: 0;
@@ -146,12 +235,30 @@ body {
   .circle:hover .circle__show--dashboard-1 {
     transform: translate(-16rem, -25rem) scale(0.9);
     opacity: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .circle:hover .circle__show--dashboard-1 {
+        transform: translate(-15rem, -25rem) scale(0.5); } }
+    @media only screen and (max-width: 37.5em) {
+      .circle:hover .circle__show--dashboard-1 {
+        transform: translate(-10rem, -20rem) scale(0.4); } }
   .circle:hover .circle__show--dashboard-2 {
     transform: translate(15rem, -23rem) scale(0.7);
     opacity: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .circle:hover .circle__show--dashboard-2 {
+        transform: translate(0, -25rem) scale(0.5); } }
+    @media only screen and (max-width: 37.5em) {
+      .circle:hover .circle__show--dashboard-2 {
+        transform: translate(0, -20rem) scale(0.4); } }
   .circle:hover .circle__show--dashboard-3 {
     transform: translate(20rem, 18rem) scale(0.6);
     opacity: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .circle:hover .circle__show--dashboard-3 {
+        transform: translate(15rem, -25rem) scale(0.5); } }
+    @media only screen and (max-width: 37.5em) {
+      .circle:hover .circle__show--dashboard-3 {
+        transform: translate(10rem, -20rem) scale(0.4); } }
 
 .project-hexagon-generator {
   margin-bottom: 15rem;
@@ -162,10 +269,22 @@ body {
   color: #0e6973;
   text-align: left;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project-hexagon-generator {
+      flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .project-hexagon-generator {
+      margin-bottom: 5rem; } }
   .project-hexagon-generator__description {
     width: 20vw; }
     .project-hexagon-generator__description p {
       padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project-hexagon-generator__description {
+        width: 60vw;
+        text-align: center;
+        order: 1;
+        margin-top: 5rem; } }
 
 .circle__hexagon-generator {
   width: 40rem;
@@ -176,7 +295,12 @@ body {
   transition: all 2s ease;
   background: url("../img/hexagon-generator-1.png");
   background-size: cover;
-  background-position: 20% 50%; }
+  background-position: 20% 50%;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .circle__hexagon-generator {
+      width: 90vw;
+      height: 90vw; } }
   .circle__hexagon-generator:hover {
     width: 80rem;
     height: 50rem;
@@ -184,6 +308,14 @@ body {
     background: url("../img/hexagon-generator-2.png");
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 56.25em) {
+      .circle__hexagon-generator:hover {
+        width: 75rem;
+        height: 45rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .circle__hexagon-generator:hover {
+        width: 90vw;
+        height: 90vw; } }
   .circle__hexagon-generator:active {
     width: 80rem;
     height: 50rem;
@@ -191,6 +323,14 @@ body {
     background: url("../img/hexagon-generator-3.png");
     background-size: cover;
     background-position: center; }
+    @media only screen and (max-width: 56.25em) {
+      .circle__hexagon-generator:active {
+        width: 75rem;
+        height: 45rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .circle__hexagon-generator:active {
+        width: 90vw;
+        height: 90vw; } }
 
 .wrapper {
   width: 100%;
@@ -212,6 +352,12 @@ body {
     color: transparent;
     font-size: 5rem;
     padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .links__icon {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .links__icon {
+        font-size: 3rem; } }
 
 .link__project {
   background-image: linear-gradient(to left top, #0e6973, #47b4c0);
@@ -220,3 +366,9 @@ body {
   color: transparent;
   font-size: 5rem;
   padding: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .link__project {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .link__project {
+      font-size: 3rem; } }
