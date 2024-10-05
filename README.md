@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-[Visit website](https://willemverbuyst.github.io/portfolio/)
+[Visit website](https://willemverbuyst.github.io/portfolio-2020/)
 
 ## What is this?
 
