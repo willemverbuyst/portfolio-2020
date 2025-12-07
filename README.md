@@ -1,12 +1,10 @@
 # PORTFOLIO
 
-[Visit website](https://willemverbuyst.github.io/portfolio-2020/)
-
 ## What is this?
 
 On this website you will find a short 'about me' and snippets of three projects that I have worked on.
 
-![](./img/screenshot-portfolio.png)
+![screenshot](./img/screenshot-portfolio.png)
 
 ## Goal
 
